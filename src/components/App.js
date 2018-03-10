@@ -10,13 +10,14 @@ const songs = [
   {id: 6, name: 'Love me like you do', img: 'assets/images/6.jpg', vote: '10'},  
 ];
 
-const App = () => {
-  render() {
-    return (
-      <div className="App">
-      </div>  
-    );
-  }
-}
+const App = () => (
+  <div>
+    <div>
+      <span></span>
+      
+      <span></span>      
+    </div>
+  </div>  
+)
 
 export default App;
