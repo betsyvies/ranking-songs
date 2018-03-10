@@ -4,9 +4,9 @@ import './global/App.css';
 const App = () => (
   <div>
     <div>
-      <img src="previous.png" alt=""/>
-      <img src="" alt=""/>
-      <img src="next.png" alt=""/>
+      <img src="assets/icons/previous.png" alt=""/>
+      <img src="assets/images/2.jpg" alt=""/>
+      <img src="assets/icons/next.png" alt=""/>
     </div>
     <div>
       <ul>
@@ -50,6 +50,5 @@ const App = () => (
     </div>
   </div>  
 )
-
 
 export default App;
