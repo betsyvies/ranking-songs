@@ -3,48 +3,48 @@ import './global/App.css';
 
 const App = () => (
   <div>
-    <div>
-      <img src="assets/icons/previous.png" alt=""/>
-      <img src="assets/images/2.jpg" alt=""/>
-      <img src="assets/icons/next.png" alt=""/>
+    <div className = 'flex'>
+      <img className = 'padding' src="assets/icons/previous.png" alt=""/>
+      <img className = 'padding' src="assets/images/2.jpg" alt=""/>
+      <img className = 'padding' src="assets/icons/next.png" alt=""/>
     </div>
     <div>
       <ul>
-        <li>
+        <li className = 'flex'>
           <span>name</span>
-          <img src="assets/icons/plus.png" alt="plus"/>
-          <img src="assets/icons/minus.png" alt="minus"/>
-          <span>23</span>
+          <img className = 'padding' src="assets/icons/plus.png" alt="plus"/>
+          <img className = 'padding' src="assets/icons/minus.png" alt="minus"/>
+          <span className = 'padding'>23</span>
         </li>
-        <li>
+        <li className = 'flex'>
           <span>name</span>
-          <img src="assets/icons/plus.png" alt="plus"/>
-          <img src="assets/icons/minus.png" alt="minus"/>
-          <span>23</span>
+          <img className = 'padding' src="assets/icons/plus.png" alt="plus"/>
+          <img className = 'padding' src="assets/icons/minus.png" alt="minus"/>
+          <span className = 'padding'>23</span>
         </li>
-        <li>
-          <span>name</span>
-          <img src="assets/icons/plus.png" alt="plus"/>
-          <img src="assets/icons/minus.png" alt="minus"/>
-          <span>23</span>
+        <li className = 'flex'>
+          <span>name</span> 
+          <img className = 'padding' src="assets/icons/plus.png" alt="plus"/>
+          <img className = 'padding' src="assets/icons/minus.png" alt="minus"/>
+          <span className = 'padding'>23</span>
         </li>
-        <li>
+        <li className = 'flex'>
           <span>name</span>
-          <img src="assets/icons/plus.png" alt="plus"/>
-          <img src="assets/icons/minus.png" alt="minus"/>
-          <span>23</span>
+          <img className = 'padding' src="assets/icons/plus.png" alt="plus"/>
+          <img className = 'padding' src="assets/icons/minus.png" alt="minus"/>
+          <span className = 'padding'>23</span>
         </li>
-        <li>
+        <li className = 'flex'>
           <span>name</span>
-          <img src="assets/icons/plus.png" alt="plus"/>
-          <img src="assets/icons/minus.png" alt="minus"/>
-          <span>23</span>
+          <img className = 'padding' src="assets/icons/plus.png" alt="plus"/>
+          <img className = 'padding' src="assets/icons/minus.png" alt="minus"/>
+          <span className = 'padding'>23</span>
         </li>
-        <li>
+        <li className = 'flex'>
           <span>name</span>
-          <img src="assets/icons/plus.png" alt="plus"/>
-          <img src="assets/icons/minus.png" alt="minus"/>
-          <span>23</span>
+          <img className = 'padding' src="assets/icons/plus.png" alt="plus"/>
+          <img className = 'padding' src="assets/icons/minus.png" alt="minus"/>
+          <span className = 'padding'>23</span>
         </li>
       </ul>
     </div>
