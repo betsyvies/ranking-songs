@@ -1,7 +1,7 @@
 import React from 'react';
-import App from './components/Img'
-import App from './components/Previous'
-import App from './components/Next'
+import Img from './components/Img'
+import Previous from './components/Previous'
+import Next from './components/Next'
 
 const ContainerImg = () => (
   <div className='flex'>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './global/App.css';
+import './ContainerImg'
 
 const App = () => (
   <div>
