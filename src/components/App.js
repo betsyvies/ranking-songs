@@ -3,11 +3,7 @@ import './global/App.css';
 
 const App = () => (
   <div>
-    <div className = 'flex'>
-      <img className = 'padding' src="assets/icons/previous.png" alt=""/>
-      <img className = 'padding' src="assets/images/2.jpg" alt=""/>
-      <img className = 'padding' src="assets/icons/next.png" alt=""/>
-    </div>
+    <ContainerImg />
     <div>
       <ul>
         <li className = 'flex'>
