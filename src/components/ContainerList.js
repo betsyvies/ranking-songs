@@ -1,9 +1,9 @@
 import React from 'react';
-import SongsList from './SongsList';
+import SongsOrder from './SongsOrder';
 
 const ContainerList = () => (
   <div className='flex'>
-    <SongsList/>
+    <SongsOrder/>
   </div>
 );
 
