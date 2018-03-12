@@ -1,14 +1,17 @@
-import React from 'react';
-import Img from './Img';
-import Previous from './Previous';
-import Next from './Next';
+// import React from 'react';
+// import Img from './Img';
+// import Previous from './Previous';
+// import Next from './Next';
+// import {next, previous} from '../actions/action-img';
 
-const ContainerImg = () => (
-  <div className='flex'>
-    <Previous />
-    <Img />
-    <Next />
-  </div>
-);
+// // const {img, next, previous} = props;
 
-export default ContainerImg;
+// const ContainerImg = (props) => (  
+//   <div className='flex'>
+//     <Previous next={next}/>
+//     <Img img={img}/>
+//     <Next previous={previous}/>
+//   </div>
+// );
+
+// export default ContainerImg;

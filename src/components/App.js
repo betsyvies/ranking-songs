@@ -1,11 +1,12 @@
 import React from 'react';
 import './global/App.css';
-import ContainerImg from './ContainerImg';
+import ContainerImg from '../containers/visibleImg';
 import ContainerList from './ContainerList';
+import reducer from '../reducers'
 
-const App = () => (
+const App = (props) => (
   <div>
-    <ContainerImg />
+    <ContainerImg store={props.store}/>
     <ContainerList />
   </div>  
 );

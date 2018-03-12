@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Next = () => (
-  <img className = 'padding' src="assets/icons/next.png" alt=""/>
+const Next = ({next}) => (
+  <img className = 'padding' src="assets/icons/next.png" alt="" onClick={next}/>
 );
 
 export default Next;

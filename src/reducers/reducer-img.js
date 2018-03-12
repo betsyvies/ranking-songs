@@ -1,5 +1,5 @@
 const initialState = {
-  songs = [
+  songs : [
     {id: 1, name: 'Sign of the time', img: 'assets/images/1.jpg', vote: '10'},
     {id: 2, name: 'Havana', img: 'assets/images/2.jpg', vote: '15' },
     {id: 3, name: 'Eye of the tiger', img: 'assets/images/3.png', vote: '11'},
@@ -13,19 +13,17 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch (action.type) {
   case 'NEXT':
-  return state.songs.map(song, index =>
-    if(song.id === state.currentId){
-      ...state,
-      currenId: song[index + 1].id
-    }
-  )
+  return state.songs.map((song, index) =>
+    (song.id === state.currentId)
+      ? {...state, currenId: state.songs[index + 1].id}
+        : song
+  );
   case 'PREVIOUS':
-  return state.songs.map(song, index =>
-    if(song.id === state.currentId){
-      ...state,
-      currenId: song[index - 1].id
-    }
-  )
+  return state.songs.map((song, index) =>
+    (song.id === state.currentId)
+      ? {...state, currenId: state.songs[index - 1].id}
+        : song
+  );
   default:
   return state
   }
