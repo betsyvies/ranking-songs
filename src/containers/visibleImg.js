@@ -1,20 +1,26 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import {next , previous} from '../actions/action-img';
-import Previous from '../components/Previous'
-import Next from '../components/Next'
-import Img from '../components/Img'
 
-const ContainerImg = ({store}) => (  
-  <div className='flex'>
-    <Previous next={next}/>
-    <Img id={store}/>
-    <Next previous={previous}/>
-  </div>
-);
+class ContainerImg extends Component
+{
+  render()
+  {
+    const {counter, next, previous} = this.props;
+
+    return(
+      <div className='flex'>
+        <img className = 'padding' src="assets/icons/previous.png" alt="" onClick={previous}/>
+        <img className = 'padding' src="assets/images/2.jpg" />
+        <h1>{counter}</h1>
+        <img className = 'padding' src="assets/icons/next.png" alt="" onClick={next}/>    
+      </div>
+    )
+  }
+}
 
 const mapStateToProps = state => ({
-  idCurrent: state.currentId
+  counter: state.counter.currentId
 })
    
 const mapDispatchToProps = (dispatch) => {

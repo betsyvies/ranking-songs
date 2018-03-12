@@ -12,19 +12,25 @@ const initialState = {
   
 export default function reducer(state = initialState, action) {
   switch (action.type) {
-  case 'NEXT':
-  return state.songs.map((song, index) =>
-    (song.id === state.currentId)
-      ? {...state, currenId: state.songs[index + 1].id}
-        : song
-  );
-  case 'PREVIOUS':
-  return state.songs.map((song, index) =>
-    (song.id === state.currentId)
-      ? {...state, currenId: state.songs[index - 1].id}
-        : song
-  );
-  default:
-  return state
+    case 'NEXT':
+      state.songs.map((song, index) => { 
+        if(song.id === state.currentId) {
+          currentId: state.songs[index + 1].id
+         } 
+          return {song};
+        }
+      );
+      return  state;
+    case 'PREVIOUS':
+    state.songs.map((song, index) => { 
+      if(song.id === state.currentId) {
+        currentId: state.songs[index - 1].id
+       } 
+        return {song};
+      }
+      );
+      return state;
+    default:
+      return state
   }
 }

@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 import songs from './songs'
-import reducer from './reducer-img'
+import counter from './reducer-img'
 
 const songApp = combineReducers({
-  reducer
+  counter
 })
 
 export default songApp
