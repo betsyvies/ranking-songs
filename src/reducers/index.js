@@ -3,7 +3,8 @@ import songs from './songs'
 import counter from './reducer-img'
 
 const songApp = combineReducers({
-  counter
+  counter, 
+  songs
 })
 
 export default songApp

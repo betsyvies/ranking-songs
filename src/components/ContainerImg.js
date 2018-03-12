@@ -2,9 +2,9 @@
 // import Img from './Img';
 // import Previous from './Previous';
 // import Next from './Next';
-// import {next, previous} from '../actions/action-img';
+// import {next, previous} from '../actions';
 
-// // const {img, next, previous} = props;
+// const {img, next, previous} = props;
 
 // const ContainerImg = (props) => (  
 //   <div className='flex'>

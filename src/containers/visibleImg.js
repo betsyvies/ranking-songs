@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import {next , previous} from '../actions/action-img';
+import {next , previous} from '../actions';
 
 class ContainerImg extends Component
 {
