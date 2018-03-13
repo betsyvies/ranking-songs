@@ -1,20 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MinusVotes from './MinusVotes';
-import MoreVotes from './MoreVotes';
 
-const AllSongs = ({ onMoreClick, onMinusClick, name, vote }) => (
+const AllSongs = ({ name, vote }) => (
   <li className = 'flex'>
     <span>{name}</span>
-    <MinusVotes/>
-    <MoreVotes/>
+    <img className = 'padding' src="assets/icons/minus.png" alt="minus"/>
+    <img className = 'padding' src="assets/icons/plus.png" alt="plus"/>
     <span className = 'padding'>{vote}</span>
   </li>
 );
 
 AllSongs.propTypes = {
-  onMoreClick: PropTypes.func.isRequired,
-  onMinusClick: PropTypes.func.isRequired,
+//   onMoreClick: PropTypes.func.isRequired,
+//   onMinusClick: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   vote: PropTypes.number.isRequired,
 };
