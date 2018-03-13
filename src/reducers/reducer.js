@@ -24,29 +24,33 @@ export default (state = INIT_STATE, action) => {
   switch (action.type) {
     // Si el action es `FILTER_TEXT_CHANGED`
     case actionTypes.UP_VOTES:
-      state = state.showSongs.map(song => {
+      state = {
+        ...state,
+        showSongs: state.showSongs.map(song => {
         let songId = song.id;
-        let actionId = parseInt(action.id);
+        let actionId = parseInt(action.id, 10);
   
-        if (songId === actionId) {        
-          // console.log(song.id);      
+        if (songId === actionId) {
+          // console.log(song.id);
           song.vote+=1;
         }
         return song;
-      });
+      })};
       break;
     // Si el action es `IN_STOCK_ONLY_CHANGED`
     case actionTypes.DOWN_VOTES:
-      state = state.showSongs.map(song => {
+      state = {
+        ...state,
+        showSongs: state.showSongs.map(song => {
         let songId = song.id;
-        let actionId = parseInt(action.id);
+        let actionId = parseInt(action.id, 10);
 
         if (songId === actionId) {
-          // console.log(song.id);          
+          // console.log(song.id);
           song.vote-=1;
         }
-        return song;        
-      });
+        return song;
+      })};
       break;
     default:
       state = {...state};

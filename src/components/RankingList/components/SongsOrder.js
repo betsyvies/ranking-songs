@@ -4,21 +4,21 @@ import PropTypes from 'prop-types'
 
 const SongsOrder = ({ songs, setMoreVotes, setMinusVotes}) => {
   // console.log(songs);
-  // const rankingOrder = songs.sort(
-  //   function (a, b) {
-  //     if (a.vote > b.vote) {
-  //       return 1;
-  //     }
-  //     if (a.vote < b.vote) {
-  //       return -1;
-  //     }
-  //     return 0;
-  //     }).reverse();
+  const rankingOrder = songs.sort(
+    function (a, b) {
+      if (a.vote > b.vote) {
+        return 1;
+      }
+      if (a.vote < b.vote) {
+        return -1;
+      }
+      return 0;
+      }).reverse();
   
   return (
     <div>
       <ul>
-        {songs.map(song => {
+        {rankingOrder.map(song => {
           return(
           <li className = 'flex' key={song.id} id={song.id} data-vote={song.vote}>
             <span>{song.name}</span>
