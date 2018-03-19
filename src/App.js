@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-// El componente Provider que expone `react-redux`
 import { Provider } from 'react-redux';
-
-import Main from './containers/Main'
-// El que acabamos de crear
-import store from './store';
+import store from './reducers/store';
+import RankingList from './components/index'
 
 import './App.css';
 
@@ -12,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Main />
+        <RankingList/>
       </Provider>
     );
   }
